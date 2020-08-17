@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: CoolArts_production
-  username: CoolArts
-  password: <%= ENV['COOLARTS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>

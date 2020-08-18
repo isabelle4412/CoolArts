@@ -1,10 +1,11 @@
 class PaintingsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @paintings = Painting.all
   end
     def show
-        @painting = Paintings.find(params[:id])
+        @painting = Painting.find(params[:id])
     end
+    
 end

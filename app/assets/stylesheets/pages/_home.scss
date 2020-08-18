@@ -1,1 +1,10 @@
 // Specific CSS for your home-page
+.container-banner {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  justify-content:center;
+      h1 {
+        font-size: 40px;
+      }
+}

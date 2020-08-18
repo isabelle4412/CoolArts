@@ -4,7 +4,11 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.firs
+
+
+
+# user = User.create!(email: "yo@gmail.com", login: '123456', first_name: "yo", last_name:"bo")
 require "open-uri"
 
 puts "Cleaning database..."
@@ -101,5 +105,6 @@ booking.user = User.where(email: "zoe@mail.com").first
 booking.painting = Painting.where(name: "Paysans attristés par la sécheresse").first
 booking.save
 puts "Created #{booking.state}"
+
 
 

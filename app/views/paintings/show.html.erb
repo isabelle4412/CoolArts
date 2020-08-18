@@ -4,6 +4,5 @@
 <p>Prix par jour: <%= @painting.price_per_day %></p>
 <p>Propriétaire: <%= @painting.user.first_name %></p>
 
-<%= cl_image_tag @painting.photo.key, height: 300, width: 400, crop: :fill %>
+<%= cl_image_tag @painting.photo.key, height: 300, width: 400, crop: :fill, class: "card-product img" %>
 
-<%= link_to "Liste des tableaux",  paintings_path%>

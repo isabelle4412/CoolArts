@@ -11,7 +11,7 @@ puts “Cleaning database...”
 Painting.destroy_all
 User.destroy_all
 puts “Creating users..”
-tommie = {email: “tom@mail.com”, password: “password”, first_name: “Tommie” , last_name: “Petit” }
+tommie = { email: “tom@mail.com”, password: “password”, first_name: “Tommie” , last_name: “Petit” }
 isabelle = {email: “isabelle@mail.com”, password: “password”, first_name: “Isabelle” , last_name: “Pouget” }
 yohann = {email: “yohann@mail.com”, password: “password”, first_name: “Yohann” , last_name: “Bonamy” }
 zoe = {email: “zoe@mail.com”, password: “password”, first_name: “Zoé” , last_name: “Pralus” }

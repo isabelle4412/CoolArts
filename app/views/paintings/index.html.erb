@@ -8,13 +8,18 @@
 
 
 
-<div class="container container-homepage ">
-    <div class="card-home ">
+  <div class="container cards-index">
       <% @paintings.each do |painting| %>
-      <img style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path painting.photo.key, height: 500, width: 400, crop: :fill %>');">
-      <div class="card-body">
-        <p class="card-text"><%= painting.name %></p>
-      </div>
+    <div class="card-index">
+
+      <%= link_to painting_path(painting) do %>
+        <img style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path painting.photo.key, height: 500, width: 400, crop: :fill %>');">
+        <div class="card-body">
+          <p class="card-text"><%= painting.name %></p>
+        </div>
       <% end %>
     </div>
-</div>
+      <% end %>
+  </div>
+
+

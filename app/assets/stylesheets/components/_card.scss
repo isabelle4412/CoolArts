@@ -43,14 +43,7 @@
     }
 }
 
-.card-index {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  background-position: center;
-  color: white;
-  position: relative;
-}
+
 .card-description {
   position: absolute;
   bottom: 10px;
@@ -76,4 +69,34 @@
 .card-description_text h2 {
   font-size: 56px;
   text-align: center;
+}
+
+
+.cards-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  height: 50px;
+}
+
+.card-index {
+
+  height: 500px;
+  margin:80px 40px 80px 40px;
+  box-shadow: 10px 5px 10px #888888;
+  border:none;
+    img {
+  height: 70%;
+  width:100%;
+    }
+}
+
+.card-text {
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+.card-body {
+  text-align: center
 }

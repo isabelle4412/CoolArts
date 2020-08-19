@@ -77,3 +77,16 @@
   font-size: 56px;
   text-align: center;
 }
+
+.card-show {
+  width: 70%;
+  height: 90vh;
+  margin:80px 40px 80px 40px;
+  box-shadow: 10px 5px 10px #888888;
+  border:none;
+    img {
+  height: 100%;
+  width:60%;
+  text-align: center;
+    }
+}

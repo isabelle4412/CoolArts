@@ -1,0 +1,16 @@
+<%= simple_form_for(@painting) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs" class="new_paintings">
+    <%= f.input :name, label: 'Entre le nom de ton tableau :', placeholder: "La Joconde"%>
+    <%= f.input :address, label: 'Entre ton adresse : ', placeholder: "Le Louvre, Paris"%>
+    <%= f.input :price_per_day, label: 'Quel prix souhaites tu mettre pour chaque journée ?', placeholder: "10" %>
+    <%= f.input :description, label: 'Décris rapidement ton tableau...', placeholder: "Ce chef d'oeuvre de Leonard De Vinci saura vous émerveiller par ses ...." %>
+    <%= f.input :photo, as: :file, input_html: { multiple: false }, label: 'Ajoute ta plus belle photo ! '  %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn-flat-white "%>
+  </div>
+<% end %>

@@ -4,6 +4,7 @@ class PaintingsController < ApplicationController
   def index
     @paintings = Painting.all
   end
+
     def show
         @painting = Painting.find(params[:id])
     end
@@ -23,9 +24,12 @@ class PaintingsController < ApplicationController
     end
   end
 
+
   private
 
   def painting_params
     params.require(:painting).permit(:name, :description, :price_per_day, :address, :photo)
   end
+
+
 end

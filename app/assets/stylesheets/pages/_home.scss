@@ -4,21 +4,9 @@
   flex-wrap:wrap;
   flex-direction:column;
   justify-content:center;
-      h1 {
-        font-size: 40px;
-      }
 }
 
 .container-homepage {
-  display:flex;
-  justify-content: space-evenly;
-}
-
-.card-product {
- margin: 30px 15px 0 15px;
- height: 200px;
-}
-
-.card-text {
-  text-align:center;
+  width: 600px;
+  margin: 20px auto;
 }

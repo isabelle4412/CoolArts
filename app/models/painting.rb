@@ -9,4 +9,5 @@ class Painting < ApplicationRecord
   validates :price_per_day, numericality: true
 
   has_one_attached :photo
+
 end

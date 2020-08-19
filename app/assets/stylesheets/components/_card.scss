@@ -44,14 +44,7 @@
     }
 }
 
-.card-index {
-  height: 175px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  background-position: center;
-  color: white;
-  position: relative;
-}
+
 .card-description {
   position: absolute;
   bottom: 10px;
@@ -80,6 +73,12 @@
   text-align: center;
 }
 
+.cards-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  height: 50px;
+}
 .card-show {
   width: 70%;
   height: 90vh;
@@ -118,4 +117,3 @@
     color: #888;
   }
 }
-

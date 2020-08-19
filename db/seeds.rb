@@ -68,7 +68,7 @@ paint.save
 puts "Created #{paint.name}"
 
 file = URI.open('https://res.cloudinary.com/doakgwppy/image/upload/v1597747342/paintings/birmingham-museums-trust-9pOXS0ZGPDM-unsplash_r1jfgz.jpg')
-paint = Painting.new(name: "Maison sur la colline", description: "Ce tableau de l'artiste Isabelle Pouget vous epoustouflera vous et vos invités. Au premier abord enfantin, il impression par ses détails multiples et travaillées", address: "Marseille", price_per_day: 4)
+paint = Painting.new(name: "Maison sur la colline", description: "Ce tableau de l'artiste Isabelle Pouget vous epoustouflera vous et vos invités. Au premier abord enfantin, il impression par ses détails multiples et travaillés", address: "Marseille", price_per_day: 4)
 paint.photo.attach(io: file, filename: 'maison.png', content_type: 'image/png')
 paint.user = User.where(email: "isabelle@mail.com").first
 paint.save

@@ -1,0 +1,15 @@
+.container-cards-index {
+  width: 700px;
+  height: 1000px;
+  display:flex;
+  flex-flow:column wrap;
+  align-content:center;
+  justify-content:center;
+  margin-top:-100px;
+}
+
+.container-button {
+  display:flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}

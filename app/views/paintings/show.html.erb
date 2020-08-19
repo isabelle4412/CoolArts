@@ -1,12 +1,16 @@
+<div class="container-show">
+    <div style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://source.unsplash.com/3k9PGKWt7ik/2000x1000);">
+        <div class="card card-show">
+            <h2 class = "text-center"><%= @painting.name %></h2>
+            <p><%= @painting.description %></p>
+            <%= cl_image_tag @painting.photo.key, height: 300, width: 400, crop: :fill, class: "text-center img" %>
+                <div>
+                    <p>Adresse: <%= @painting.address %></p>
+                    <p>Prix: <%= @painting.price_per_day %>euros/jour</p>
+                    <p>Propriétaire: <%= @painting.user.first_name %></p>
 
-<div class="card card-show">
-    <h2 class = "text-center"><%= @painting.name %></h2>
-    <p class="card-text"><%= @painting.description %></p>
-    <%= cl_image_tag @painting.photo.key, height: 300, width: 400, crop: :fill, class: "text-center img" %>
-        <div class="card-body">
-            <p class="card-text">Adresse: <%= @painting.address %></p>
-            <p class="card-text">Prix par jour: <%= @painting.price_per_day %></p>
-            <p class="card-text">Propriétaire: <%= @painting.user.first_name %></p>
+                </div>
         </div>
+    </div>
 </div>
 

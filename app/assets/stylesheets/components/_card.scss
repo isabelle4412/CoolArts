@@ -82,9 +82,16 @@
 
 .card-text a {
   text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
   color:black;
   &:hover {
     color: #888;
   }
 }
 
+.card-body {
+  display:flex;
+  justify-content:justify;
+  align-items:center;
+}

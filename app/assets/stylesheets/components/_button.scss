@@ -1,13 +1,16 @@
 .btn-flat-white {
   color: black;
   background-color: #e0dede;
-  padding: 8px 24px;
+  padding: 8px 24px 10px 24px;
   border-radius: 4px;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
   transition: background 0.3s ease;
 }
 
 .btn-flat-white:hover {
   text-decoration:none;
-  background: #519872;
-  color: #e0dede;
+  background: #ffd571;
+  color: black;
+  padding: 10px 26px 10px 26px ;
 }

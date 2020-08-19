@@ -5,7 +5,7 @@
   box-shadow: 10px 5px 10px #888888;
   text-align: center;
   background-color: rgba(251, 226, 229, 0.7);
-  
+
   img {
     height: 100%;
     width:50%;
@@ -42,11 +42,12 @@
   font-family: 'Indie Flower', cursive;
   text-align:center;
   opacity:0;
-  
+
   &:hover {
     opacity:1;
     transition: opacity 0.6s ease;
   }
+}
 
 .card-category-index {
   display:grid;

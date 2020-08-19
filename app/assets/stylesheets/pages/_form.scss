@@ -1,0 +1,29 @@
+.new_paintings {
+  background: white;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  justify-content: center;
+  }
+
+.container-new-paintings {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  padding: 60px 20px;
+  margin : 0px 300px;
+  background-color: rgba(251, 226, 229, 0.7);
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+  }

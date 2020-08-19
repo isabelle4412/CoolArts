@@ -5,22 +5,25 @@
     <p><%= link_to "Découvrir les tableaux", paintings_path, class:"btn-large btn-flat-white"%></p>
   </div>
 </div>
-<div class="container container-homepage">
-  <div class="container-card-home">
-    <div class="card card-home">
-      <img src="https://source.unsplash.com/VCLNNMRl07k/500x400" class="card-img-top" alt="...">
-        <p class="card-text"> <%= link_to "Un mélange artistique, vif, ambitieux et coloré de François PETIT", paintings_path %> </p>
+
+<div class="container container-home">
+  <div class="cards">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/VCLNNMRl07k.jpg)">
+      <p> <%= "Un mélange artistique, vif, ambitieux et coloré de François PETIT" %> </p>
     </div>
-    <div class="card card-home">
-      <img src="https://source.unsplash.com/rhUU1pemhQ0/500x400" class="card-img-top" alt="...">
-        <p class="card-text"> <%= link_to "Quand la nature et les couleurs se rassemblent naturellement, une oeuvre de Michel", paintings_path %> </p>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/rhUU1pemhQ0.jpg)">
+       <p> <%= "Quand la nature et les couleurs se rassemblent naturellement, une oeuvre de Michel" %> </p>
     </div>
-    <div class="card card-home">
-      <img src="https://source.unsplash.com/rlbG0p_nQOU/500x400" class="card-img-top" alt="...">
-      <p class="card-text"> <%= link_to "Des Formes originales et de la géométrie contemporaine par le célébre Daffy Duck", paintings_path %> </p>
-      </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/rlbG0p_nQOU.jpg)">
+       <p class="card-text"> <%= "Des Formes originales et de la géométrie contemporaine par le célébre Daffy Duck" %> </p>
+    </div>
   </div>
 </div>
+
+
+
 <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fab fa-instagram"></i></a>

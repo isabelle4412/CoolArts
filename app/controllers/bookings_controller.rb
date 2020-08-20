@@ -3,6 +3,7 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = current_user.bookings
+
     # @paintings = Painting.all
     # # @paintsing = Painting.find(params[:painting_id])
     # @bookings.painting = cl_image_path painting.photo.key

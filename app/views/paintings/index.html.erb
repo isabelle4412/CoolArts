@@ -8,14 +8,14 @@
       <% @paintings.each do |painting| %>
 
         <div class="card-category-index" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path painting.photo.key %>')">
-
-          <%= link_to painting_path(painting) do %>
-            <p> <%= painting.name %></p>
+          <div class="card-index-text">
+            <%= link_to painting_path(painting) do %>
+            <h4> <%= painting.name %> </h4>
+            <p> <%= painting.description %> </p>
           <% end %>
+          </div>
         </div>
 
       <% end %>
   </div>
-
-
 

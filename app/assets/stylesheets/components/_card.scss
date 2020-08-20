@@ -51,7 +51,7 @@
 
 .card-category-index {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   background-size: cover;
   background-position: center;
@@ -66,24 +66,37 @@
   margin: 30px;
   }
 
+  .card-index-text {
+    width:200px;
+    margin:0 auto;
+    overflow:auto;
+  }
+  .card-index-text h4 {
+    font-family: $p-font;
+    opacity: 0.4;
+    text-align: center;
+    color:white;
+    padding-top:10px;
+      &:hover {
+        opacity:1;
+        transition: opacity 0.8s;
+      }
+   }
 
 
-  .card-category-index p {
-    padding:150px 10px 100px 100px;
+
+  .card-index-text p {
+    padding:10px 0 0 0;
     font-size: 20px;
     font-family: $p-font;
-    text-align:center;
+    text-align:justify;
     color:white;
     opacity:0;
       &:hover {
-        text-decoration:none;
-        text-align:center;
         opacity:1;
-
+        transition: opacity 1s;
       }
     }
-
-
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

@@ -1,0 +1,6 @@
+<% @owner_paintings.each do |owner_painting| %>
+    <h2> <%= owner_painting.name %> </h2>
+    <div><%= cl_image_tag owner_painting.photo.key, height: 300, width: 400, crop: :fill, class: "text-center img" %></div>
+    <p><%= owner_painting.booking.state %></p>
+<% end %>
+

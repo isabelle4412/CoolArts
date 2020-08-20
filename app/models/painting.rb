@@ -7,7 +7,4 @@ class Painting < ApplicationRecord
   validates :name, uniqueness: true
 
   validates :price_per_day, numericality: true
-
-  has_one_attached :photo
-
 end

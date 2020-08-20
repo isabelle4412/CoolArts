@@ -47,7 +47,7 @@ paint.save
 puts "Created #{paint.name}"
 
 file = URI.open('https://res.cloudinary.com/doakgwppy/image/upload/v1597747332/paintings/mike-von-aaWaG-raMNw-unsplash_ebpzta.jpg')
-paint = Painting.new(name: "women", description: "Quoi de mieux qu'un tableau de Mike Trioupy dans votre salon ? Surprenant, vivifiant : on ne se lasse pas de regarder ce tableau", address: "Place Jean Jaures, St Etienne", price_per_day: 3)
+paint = Painting.new(name: "women", description: "Quoi de mieux qu'un tableau de Mike Trioupy dans votre salon ? Surprenant, vivifiant : on ne se lasse pas de regarder ce tableau", address: "Place Jean Jaures Saint-Etienne", price_per_day: 3)
 paint.photo.attach(io: file, filename: 'women.png', content_type: 'image/png')
 paint.user = User.where(email: "tom@mail.com").first
 paint.save

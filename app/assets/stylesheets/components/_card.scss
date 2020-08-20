@@ -101,7 +101,9 @@
     padding-top:10px;
       &:hover {
         opacity:1;
-        transition: opacity 0.5s;
+        color:#eebb4d;
+        transition: opacity color 0.5s;
+
       }
    }
 

@@ -1,0 +1,9 @@
+.text-center-img {
+  border-radius:8px;
+  box-shadow: 2px 3px 8px #888888;
+  margin: 0 auto;
+      &:hover {
+        margin:10px auto 10px auto;
+        transition: margin 0.3s;
+      }
+}

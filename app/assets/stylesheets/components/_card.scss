@@ -5,19 +5,22 @@
   display: flex;
   flex-direction: column;
   box-shadow: 5px 5px 5px lightgrey;
+  margin: 35px 0 35px 70px;
+  background-color: $gray-tab;
     p {
       margin: auto;
       padding-top: 10px;
       width: 80%;
     }
-    h2{
+  }
+
+.card-show-painting h2 {
       padding-bottom: 10px;
     }
-}
 
 .card-show-label {
   box-shadow: 5px 5px 5px lightgrey;
-  background-color: #fbecec;
+  background-color: $gray-tab;
   padding: 20px;
   margin: 50px 20px;
 }

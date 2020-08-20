@@ -27,6 +27,7 @@
   font-family: $p-font;
   transition: background 0.8s ease;
 }
+
 .btn-painting-new:hover {
       box-shadow:3px 5px 10px black;
       text-decoration:none;
@@ -36,3 +37,20 @@
       transition: box-shadow 0.5s;
     }
 
+.btn-flat-black {
+  color: white;
+  background-color: black;
+  padding: 8px 24px 10px 24px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: $p-font;
+  transition: background 0.8s ease;
+    &:hover {
+    box-shadow:3px 5px 10px black;
+    background: #ffd571;
+    color: black;
+    padding: 10px 26px 10px 26px;
+    transition: box-shadow 0.5s;
+    text-decoration:none;
+    }
+}

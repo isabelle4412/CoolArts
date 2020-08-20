@@ -43,6 +43,10 @@
   border-radius: 5px;
   box-shadow: 5px 5px 5px #888888;
   margin: 30px;
+    &:hover {
+      box-shadow:8px 8px 3px #888888 ;
+      transition: box-shadow 0.4s;
+    }
 }
 
 
@@ -61,7 +65,7 @@
 
 .card-category-index {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   background-size: cover;
   background-position: center;
@@ -74,26 +78,48 @@
   border-radius: 5px;
   box-shadow: 5px 5px 5px #888888;
   margin: 30px;
+      &:hover {
+        height:320px;
+        transition:height 0.4s;
+      }
   }
 
+.card-category-index a {
+   text-decoration: none;
+}
 
+.card-index-text {
+  width:200px;
+  margin:0 auto;
+  overflow:auto;
+  }
 
-  .card-category-index p {
-    padding:150px 10px 100px 100px;
-    font-size: 20px;
-    font-family: $p-font;
-    text-align:center;
-    color:white;
-    opacity:0;
-      &:hover {
-        text-decoration:none;
-        text-align:center;
-        opacity:1;
+.card-index-text h4 {
+  font-family: $p-font;
+  opacity: 0.4;
+  text-align: center;
+  color:white;
+  padding-top:10px;
+    &:hover {
+      opacity:1;
+      color:#eebb4d;
+      transition: opacity color 0.5s;
 
       }
+  }
+
+.card-index-text p {
+  padding:10px 0 0 0;
+  font-size: 20px;
+  font-family: $p-font;
+  text-align:center;
+  color:white;
+  opacity:0;
+    &:hover {
+      opacity:1;
+      transition: opacity 0.5s;
     }
-
-
+  }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

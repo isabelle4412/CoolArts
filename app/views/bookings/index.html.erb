@@ -1,0 +1,27 @@
+<div class="title">
+  <h1>Mes reservations</h1>
+</div>
+
+
+<div class="card mb-3 mt-5 ml-4" style="max-width: 1540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <% @bookings.each do |booking| %>
+        <p><%= cl_image_tag booking.painting.photo.key, width: 350, height: 300, crop: :fill%></p>
+      <% end %>
+    </div>
+    <div class="col-md-8">
+      <% @bookings.each do |booking| %>
+      <div class="card-body">
+        <h5 class="card-title"><%= booking.starts_on%></h5>
+        <p class="card-text"><%= booking.ends_on %></p>
+        <p class="card-text"><%= booking.state %></p>
+        <p class="card-text"><%= booking.total_price %></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+

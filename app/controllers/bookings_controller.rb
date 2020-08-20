@@ -13,15 +13,8 @@ class BookingsController < ApplicationController
     @bookings = Booking.new
   end
 
-  def create
-    @booking = Booking.new(booking_params)
-  end
 
-  private
-
-  def booking_params
-     params.require(:booking).permit(:starts_on, :ends_on, :state, :total_price)
-  end
+  
 
   def create
     @booking      = Booking.new(booking_params)

@@ -2,8 +2,10 @@
 <% @owner_paintings.each do |owner_painting| %>
     <div class="painting">
         <div><%= cl_image_tag owner_painting.photo.key, height: 150, width: 200, crop: :fill, class: "text-center img" %></div>
-        <h2> <%= owner_painting.name %> </h2>
+        <p> <%= owner_painting.name %><br>date début, date fin, prix total </p>
         <p><%= owner_painting.bookings%></p>
+        <p>Bouton Valider</p>
+        <p>Bouton Refuser</p>
     </div>
 <% end %>
 

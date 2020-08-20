@@ -1,0 +1,15 @@
+<div class="banner_booking" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://www.kazoart.com/blog/wp-content/uploads/2019/05/Salvador-Dali-persistance-de-la-memoire-1931.jpg);">
+  <div class="container container-banner">
+    <h1>Mise en location</h1>
+  </div>
+</div>
+
+<%= simple_form_for [user, booking] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <%= f.input :starts_on %>
+        <%= f.input :ends_on %>
+        <%= f.input :state %>
+        <%= f.input :total_price %>
+        <%= f.submit class: 'btn btn-primary' %>
+      <% end %>

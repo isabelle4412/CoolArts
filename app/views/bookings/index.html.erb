@@ -1,0 +1,30 @@
+<div class="banner_booking" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://source.unsplash.com/syZhH19b1Z8);">
+  <div class="container container-banner">
+    <h1>Mes réservations</h1>
+  </div>
+</div>
+
+<div class="container container_booking" >
+  <div>
+    <% @bookings.each do |booking| %>
+      <div class="cards_booking">
+        <p><%= cl_image_tag booking.painting.photo.key, width: 400, height: 300, crop: :fill%></p>
+      </div>
+    <% end %>
+  </div>
+    <div>
+      <% @bookings.each do |booking| %>
+        <div class="cards_booking ">
+
+          <p><%= booking.starts_on%></p>
+          <p><%= booking.ends_on %></p>
+          <p><%= booking.state %></p>
+          <p><%= booking.total_price %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
+
+

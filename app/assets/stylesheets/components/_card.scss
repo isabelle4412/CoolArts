@@ -39,7 +39,7 @@
 .card-category p  {
   padding:150px 10px 0px 10px;
   font-size: 20px;
-  font-family: 'Indie Flower', cursive;
+  font-family: $p-font;
   text-align:center;
   opacity:0;
 
@@ -71,7 +71,7 @@
   .card-category-index p {
     padding:150px 10px 100px 100px;
     font-size: 20px;
-    font-family: 'Indie Flower', cursive;
+    font-family: $p-font;
     text-align:center;
     color:white;
     opacity:0;

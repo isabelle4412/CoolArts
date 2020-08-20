@@ -4,7 +4,7 @@
   padding: 8px 24px 10px 24px;
   border-radius: 4px;
   font-size: 20px;
-  font-family: 'Indie Flower', cursive;
+  font-family: $p-font;
   transition: background 0.8s ease;
 }
 
@@ -21,7 +21,7 @@
   padding: 8px 24px 10px 24px;
   border-radius: 4px;
   font-size: 20px;
-  font-family: 'Indie Flower', cursive;
+  font-family: $p-font;
   transition: background 0.8s ease;
 }
 .btn-painting-new:hover {

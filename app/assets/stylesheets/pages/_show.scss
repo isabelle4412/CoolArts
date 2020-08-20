@@ -2,5 +2,18 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
+  h2{
+    font-family:'Pacifico', cursive;
+  }
+  p {
+    font-family: $body-font;
+  }
 }
+.container-info {
+  width: 40vw;
+  height: auto;
+  margin: 0px 100px;
+}
+
+

@@ -4,6 +4,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 5px lightgrey;
     p {
       margin: auto;
       padding-top: 10px;
@@ -16,11 +17,9 @@
 
 .card-show-label {
   box-shadow: 5px 5px 5px lightgrey;
-  background-color: white;
+  background-color: #fbecec;
   padding: 20px;
   margin: 50px 20px;
-  width: 40vw;
-  height: 20%;
 }
 
 

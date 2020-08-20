@@ -1,6 +1,23 @@
 .container-show {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: white;
+    h2 {
+    font-family:'Pacifico', lighter;
+    font-size: 26px;
+   }
+  }
+
+.container-show p {
+  font-family: $p-font;
+  font-size:22px;
+  }
+
+.container-info {
+  width: 40vw;
+  height: auto;
+  margin: 0px 100px;
 }
+
+

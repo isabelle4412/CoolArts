@@ -2,11 +2,18 @@ class PaintingsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @paintings = Painting.all
+
+     if params[:query].present?
+      @paintings = Painting.where("name ILIKE ?", "%#{params[:query]}%")
+    else
+      @paintings = Painting.all
+    end
   end
 
+
     def show
-        @painting = Painting.find(params[:id])
+      @painting = Painting.find(params[:id])
+      @booking = Booking.new
     end
 
   def new
@@ -24,12 +31,10 @@ class PaintingsController < ApplicationController
     end
   end
 
-
   private
 
   def painting_params
     params.require(:painting).permit(:name, :description, :price_per_day, :address, :photo)
   end
-
 
 end

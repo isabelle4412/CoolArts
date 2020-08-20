@@ -1,27 +1,35 @@
-<div class="title">
-  <h1>Mes reservations</h1>
-</div>
+<div class="container">
+  <div class="title_reservation">
+    <h1>Mes réservations:</h1>
+  <div >
+    <div class="title-bis">
+    <h2>Les tableaux que j'ai loué :</h2>
+  </div>
 
+  <div class="container container_booking">
+    <div class="card mb-3 mt-5 ml-4" style="max-width: 1040px, max-height: 500px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
 
-<div class="card mb-3 mt-5 ml-4" style="max-width: 1540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <% @bookings.each do |booking| %>
-        <p><%= cl_image_tag booking.painting.photo.key, width: 350, height: 300, crop: :fill%></p>
-      <% end %>
-    </div>
-    <div class="col-md-8">
-      <% @bookings.each do |booking| %>
-      <div class="card-body">
-        <h5 class="card-title"><%= booking.starts_on%></h5>
-        <p class="card-text"><%= booking.ends_on %></p>
-        <p class="card-text"><%= booking.state %></p>
-        <p class="card-text"><%= booking.total_price %></p>
+          <% @bookings.each do |booking| %>
+            <p><%= cl_image_tag booking.painting.photo.key, width: 350, height: 300, crop: :fill%></p>
+          <% end %>
+        </div>
+
+        <div class="col-md-8">
+          <% @bookings.each do |booking| %>
+          <div class="card-body booking">
+            <h1 class="card-text"><%= booking.painting.name%></h1>
+            <p class="card-text-reservation">Date de début: <%= booking.starts_on%></p>
+            <p class="card-text-reservation">Date de fin: <%= booking.ends_on %></p>
+            <p class="card-text-reservation">Status: <%= booking.state %></p>
+            <p class="card-text-reservation">Prix: <%= booking.total_price %> e par jour</p>
+          </div>
+          <% end %>
+        </div>
       </div>
-      <% end %>
     </div>
   </div>
 </div>
-
 
 

@@ -1,32 +1,41 @@
-.banner_booking {
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0;
-}
+// // .banner_booking {
+// //   background-size: cover;
+// //   background-position: center;
+// //   padding: 100px 0;
+// // }
 
-.banner_booking h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0);
-  font-weight: bold;
-  text-align:center;
-  font-size: 70px;
+// // .banner_booking h1 {
+// //   margin: 0;
+// //   color: white;
+// //   text-shadow: 1px 1px 3px rgba(0,0,0,0);
+// //   font-weight: bold;
+// //   text-align:center;
+// //   font-size: 70px;
+// //   font-family: 'Pacifico', cursive;
+// //   padding-bottom: 10px;
+// // }
+
+.title h1 {
   font-family: 'Pacifico', cursive;
-  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.cards_booking {
-  // background-color: rgba(141, 34, 27, 0.7);
-  text-indent: center;
-  border: 10px;
-  margin-top:20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:150px 10px 100px 100px;
+.reservation {
+  margin-top: 100px;
 }
 
-.container_booking {
-  display: flex;
-  justify-content: space-between;
-}
+
+
+// .cards_photo {
+//   display: flex;
+//   justify-content: space-between;
+//   padding:150px 100px 10px 100px;
+//   flex-direction: row;
+//   align-items: start;
+// }
+
+// .container_booking {
+//   display: flex;
+//   justify-content: space-around;
+// }

@@ -1,11 +1,13 @@
 .container-cards-index {
-  width: 700px;
-  height: 1000px;
-  display:flex;
-  flex-flow:column wrap;
-  align-content:center;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  column-gap: 10px;
+  row-gap: 15px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
   justify-content:center;
-  margin-top:-100px;
+
 }
 
 .container-button {

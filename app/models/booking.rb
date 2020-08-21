@@ -8,6 +8,6 @@ class Booking < ApplicationRecord
 
   # validates :total_price, numericality: true
 
-  validates :state, acceptance: { accept: ["accepted", "refused", "pending"] }
+  validates :state, acceptance: { accept: ["Acceptée", "Refusée", "En cours"] }
 
 end

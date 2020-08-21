@@ -25,7 +25,7 @@ class PaintingsController < ApplicationController
     @painting.user = User.where(first_name: current_user.first_name).first
 
     if @painting.save
-      redirect_to @painting, notice: 'Painting was successfully added.'
+      redirect_to @painting, notice: 'La peinture a bien été ajoutée ! '
     else
       render :new
     end

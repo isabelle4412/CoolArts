@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     resources :paintings, only: [:index]
   end
 
+  namespace :owner do
+    resources :bookings, only: [:index]
+  end
+
   resources :bookings, only: [:index, :create, :new] do
     member do
       patch 'accept'

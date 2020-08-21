@@ -13,9 +13,6 @@ class BookingsController < ApplicationController
     @bookings = Booking.new
   end
 
-
-
-
   def create
     @booking      = Booking.new(booking_params)
     @booking.user = User.where(first_name: current_user.first_name).first
@@ -29,9 +26,22 @@ class BookingsController < ApplicationController
     if @booking.save!
       redirect_to @painting, notice: 'La réservation a bien été envoyé'
     else
-
       render "paintings/show"
     end
+  end
+
+  def accept
+    @booking = Booking.find(params[:id])
+    @booking.state = "accepted"
+    @booking.save
+    redirect_to owner_bookings_path
+  end
+
+  def decline
+    @booking = Booking.find(params[:id])
+    @booking.state = "refused"
+    @booking.save
+    redirect_to owner_bookings_path
   end
 
   private

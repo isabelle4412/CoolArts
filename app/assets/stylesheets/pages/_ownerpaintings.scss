@@ -1,13 +1,12 @@
 .container-owner {
     background-color: white;
-}
-
-h1 {
+    h1 {
     font-family:'Pacifico', lighter;
     font-size: 40px;
     text-align: center;
     padding-bottom: 15px;
     padding-top: 20px;
+  }
 }
 
 .painting {
@@ -18,15 +17,13 @@ h1 {
     padding: 10px;
     box-shadow: 5px 5px 5px lightgrey;
     background-color: $gray-tab;
-
     p {
         font-family: $p-font;
         font-size:22px;
        }
-
-    h2 {
+  }
+  .painting h2 {
         font-family:'Pacifico', lighter;
         font-size: 26px;
         width: 30%;
        }
-}

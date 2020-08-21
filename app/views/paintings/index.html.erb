@@ -1,17 +1,17 @@
-<div class = "container-button">
-  <%= form_tag paintings_path, class: "search-form-control", method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Trouve ton tableau"
-  %>
-  <i class="fas fa-paint-brush  icon"></i>
-  <%= submit_tag "Search", class: "btn " %>
-<% end %>
-</div>
-
 <div class="container container-button">
-  <div> <%= link_to "Ajouter un tableau", new_painting_path, class:"btn btn-painting-new" %>
+  <%= form_tag paintings_path, class: "search-form-control", method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Trouve ton tableau"
+    %>
+
+    <i class="fas fa-paint-brush  icon"></i>
+
+    <%= submit_tag "Search", class: "btn " %>
+  <% end %>
+
+  <div><%= link_to "Ajouter un tableau", new_painting_path, class:"btn btn-painting-new" %>
   </div>
  </div>
 

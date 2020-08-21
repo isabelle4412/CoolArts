@@ -10,7 +10,6 @@ class PaintingsController < ApplicationController
     end
   end
 
-
     def show
       @painting = Painting.find(params[:id])
       @booking = Booking.new

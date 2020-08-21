@@ -18,14 +18,14 @@
 }
 
 .btn-painting-new {
-  margin: 30px 0 -30px;
+  margin: 10px 0 0 0;
   background-color: #ffd571;
   color:black;
   padding: 8px 24px 10px 24px;
   border-radius: 4px;
   font-size: 20px;
   font-family: $p-font;
-  transition: background 0.8s ease;
+  transition: background 0.5s ;
 }
 
 .btn-painting-new:hover {

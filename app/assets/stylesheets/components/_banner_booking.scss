@@ -15,12 +15,12 @@
 // //   padding-bottom: 10px;
 // // }
 
-.title h1 {
-  font-family: 'Lobster', cursive;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 120px;
-}
+// .title h1 {
+//   font-family: 'Lobster', cursive;
+//   text-align: center;
+//   text-decoration: underline;
+//   font-size: 120px;
+// }
 
 .reservation {
   margin-top: 100px;
@@ -35,19 +35,16 @@
   border-radius: 30px;
 }
 
-.title_reservation h1 {
-  font-size: 50px;
-  font-family:'Permanent Marker','Helvetica Neue',Helvetica,Arial,sans-serif;
-  color: black;
-}
-
 .card-text-reservation {
-  font-family: 'Montserrat,sans-serif';
+  font-family: $p-font;
 }
 
-.title-bis {
-  background-color: white;
+
+.image-booking p {
+  object-fit: cover;
 }
+
+
 
 
 // .cards_photo {

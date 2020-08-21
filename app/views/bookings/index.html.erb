@@ -1,4 +1,6 @@
-<div class="container">
+<div class="contain_booking">
+
+  <div class="container">
   <div class="title_reservation">
     <h1>Mes réservations:</h1>
   <div >
@@ -9,10 +11,10 @@
   <div class="container container_booking">
     <div class="card mb-3 mt-5 ml-4" style="max-width: 1040px, max-height: 500px;">
       <div class="row no-gutters">
-        <div class="col-md-4">
+        <div class="image-booking col-md-4">
 
           <% @bookings.each do |booking| %>
-            <p><%= cl_image_tag booking.painting.photo.key, width: 350, height: 300, crop: :fill%></p>
+            <p><%= cl_image_tag booking.painting.photo.key, width: 350, height: 260, crop: :fill%></p>
           <% end %>
         </div>
 
@@ -31,5 +33,4 @@
     </div>
   </div>
 </div>
-
 

@@ -1,0 +1,35 @@
+.contain_booking {
+}
+
+.card-booking {
+  display: flex;
+}
+
+
+.title h1 {
+  font-family: $p-font;
+  margin: 30px;
+}
+
+
+
+.image {
+  width: 300px;
+  padding: 30px;
+  margin: 30px;
+}
+
+.info-tab h1 {
+  width: 35px;
+  margin-top: 70px;
+  margin-left: 40px;
+  font-size: 35px;
+  font-weight: 10px;
+  font-family: $p-font;
+}
+
+.booking-date {
+  font-family: $p-font;
+  margin-left: 170px;
+  margin-top: 150px;
+}

@@ -3,6 +3,7 @@
     <div class="container_owner_bookings">
       <div><%= cl_image_tag booking_owner.painting.photo.key, height: 300, width: 500, crop: :fill, class: "img_book" %></div>
       <h1 class = "state"> <%= booking_owner.state %> </h1>
+      <p class = "state_date"> Du <%= booking_owner.starts_on.strftime(" %d/%m/%Y") %> jusqu'au <%= booking_owner.ends_on.strftime(" %d/%m/%Y") %> </p>
       <p class="title"><%= booking_owner.painting.name %></p>
       <div class="overlay"></div>
         <div>

@@ -94,13 +94,13 @@ puts "Finished"
 
 puts "Creating bookings"
 
-booking = Booking.new(starts_on: "01/07/2020" , ends_on: "20/08/2020", state: "accepted",total_price: 85 )
+booking = Booking.new(starts_on: "01/07/2020" , ends_on: "20/08/2020", state: "Acceptée",total_price: 85 )
 booking.user = User.where(email: "yohann@mail.com").first
 booking.painting = Painting.where(name: "Paysans attristés par la sécheresse").first
 booking.save
 puts "Created #{booking.state}"
 
-booking = Booking.new(starts_on: "01/07/2020" , ends_on: "12/09/2020", state: "accepted", total_price: 120 )
+booking = Booking.new(starts_on: "01/07/2020" , ends_on: "12/09/2020", state: "Acceptée", total_price: 120 )
 booking.user = User.where(email: "zoe@mail.com").first
 booking.painting = Painting.where(name: "Paysans attristés par la sécheresse").first
 booking.save

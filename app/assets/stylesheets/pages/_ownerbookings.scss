@@ -54,7 +54,7 @@
   color: white;
   z-index: 1;
   transition: top .5s ease;
-  font-family: 'Pacifico', cursive;
+  font-family: $p-font;
 }
 
 .container_owner_bookings:hover .title {
@@ -121,3 +121,12 @@
   font-weight: thin;
 }
 
+.state_date {
+  position: absolute;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: $p-font;
+  color: white;
+  font-weight: thin;
+}

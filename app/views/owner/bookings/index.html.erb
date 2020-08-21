@@ -6,9 +6,9 @@
       <p class="title"><%= booking_owner.painting.name %></p>
       <div class="overlay"></div>
         <div>
-          <div class="button_owners"> <a <%= link_to "Accepter", accept_booking_path(booking_owner), method: :patch, class: "dropdown-item" %>> </a></div>
+          <div class="button_owners"> <a <%= link_to "Accepter", accept_booking_path(booking_owner), method: :patch, class: "dropdown-item" %> </a></div>
       </div>
-        <div class="button_owners_decline"> <a <%= link_to "Refuser", decline_booking_path(booking_owner), method: :patch, class: "dropdown-item" %>> </a></div>
+        <div class="button_owners_decline"> <a <%= link_to "Refuser", decline_booking_path(booking_owner), method: :patch, class: "dropdown-item" %> </a></div>
     </div>
   <% end %>
-</div>d
+</div>

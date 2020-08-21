@@ -1,15 +1,21 @@
-<div class = "global_owner_container">
-  <%  @bookings.each do |booking_owner| %>
+<div class="global_owner_container">
+  <% @bookings.each do |booking_owner| %>
     <div class="container_owner_bookings">
       <div><%= cl_image_tag booking_owner.painting.photo.key, height: 300, width: 500, crop: :fill, class: "img_book" %></div>
+
       <h1 class = "state"> <%= booking_owner.state %> </h1>
       <p class = "state_date"> Du <%= booking_owner.starts_on.strftime(" %d/%m/%Y") %> jusqu'au <%= booking_owner.ends_on.strftime(" %d/%m/%Y") %> </p>
       <p class="title"><%= booking_owner.painting.name %></p>
+
       <div class="overlay"></div>
-        <div>
-          <div class="button_owners"> <a <%= link_to "Accepter", accept_booking_path(booking_owner), method: :patch, class: "dropdown-item" %> </a></div>
+
+      <div>
+        <div class="button_owners"><%= link_to "Accepter", accept_booking_path(booking_owner), method: :patch, class: "dropdown-item" %>
+        </div>
       </div>
-        <div class="button_owners_decline"> <a <%= link_to "Refuser", decline_booking_path(booking_owner), method: :patch, class: "dropdown-item" %> </a></div>
+
+      <div class="button_owners_decline"><%= link_to "Refuser", decline_booking_path(booking_owner), method: :patch, class: "dropdown-item" %>
+      </div>
     </div>
   <% end %>
 </div>

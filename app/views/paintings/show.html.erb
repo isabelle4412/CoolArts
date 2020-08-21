@@ -18,9 +18,11 @@
       <%= f.input :painting_id, as: :hidden, input_html: { value: @painting.id} %>
 
       <div class="form-inputs" class="new_paintings">
-        <%= f.input :starts_on, label: "Fin",  as: :string, required: false, input_html: {class: "datepicker"}%>
-        <%= f.input :ends_on, label: "Début", as: :string, required: false,  input_html: {class: "datepicker"}%>
+        <%= f.input :starts_on, label: "Début",  as: :string, required: false, input_html: {class: "datepicker"}%>
+        <%= f.input :ends_on, label: "Fin", class: "end", as: :string, required: false,  input_html: {class: "datepicker"}%>
       </div>
+      <span class = "hidden" >
+      </span>
 
 
       <div class="form-actions">

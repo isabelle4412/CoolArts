@@ -19,7 +19,7 @@ User.destroy_all
 puts "Creating users.."
 
 tommie = {email: "tom@mail.com", password: "password", first_name: "Tommie" , last_name: "Petit" }
-isabelle = {email: "isabelle@mail.com", password: "password", first_name: "Isabelle" , last_name: "Pouget" }
+isabelle = {email: "leo@mail.com", password: "password", first_name: "Léo" , last_name: "Colocator" }
 yohann = {email: "yohann@mail.com", password: "password", first_name: "Yohann" , last_name: "Bonamy" }
 zoe = {email: "zoe@mail.com", password: "password", first_name: "Zoé" , last_name: "Pralus" }
 
@@ -56,28 +56,28 @@ puts "Created #{paint.name}"
 file = URI.open('https://res.cloudinary.com/doakgwppy/image/upload/v1597747332/paintings/steve-johnson-m6naQNiljrY-unsplash_evoynx.jpg')
 paint = Painting.new(name: "flower", description: "Nature morte mais tableau bien vivant : il enchante votre salon et vous fait apprécier de nouveau la beauté de la nature", address: "30 Rue des Fosses, 44270 La Marne", price_per_day: 1)
 paint.photo.attach(io: file, filename: 'color.png', content_type: 'image/png')
-paint.user = User.where(email: "isabelle@mail.com").first
+paint.user = User.where(email: "leo@mail.com").first
 paint.save
 puts "Created #{paint.name}"
 
 file = URI.open('https://res.cloudinary.com/doakgwppy/image/upload/v1597747332/paintings/europeana-ryiQ0NISRJ4-unsplash-2_cpgjvr.jpg')
 paint = Painting.new(name: "colors", description: "Explosion de couleur ! Ce tableau respire la joie de vivre, c'est une galaxie émouvante de couleurs ! Embrassez la vie, louez ce tableau ", address: "Place du Pilori 44036 Nantes", price_per_day: 3)
 paint.photo.attach(io: file, filename: 'color.png', content_type: 'image/png')
-paint.user = User.where(email: "isabelle@mail.com").first
+paint.user = User.where(email: "leo@mail.com").first
 paint.save
 puts "Created #{paint.name}"
 
 file = URI.open('https://res.cloudinary.com/doakgwppy/image/upload/v1597747342/paintings/birmingham-museums-trust-9pOXS0ZGPDM-unsplash_r1jfgz.jpg')
 paint = Painting.new(name: "Maison sur la colline", description: "Ce tableau de l'artiste Isabelle vous epoustouflera vous et vos invités. Au premier abord enfantin, il impressionne par ses détails multiples et travaillés !! Grande Artiste en devenir, impressionnez vos amis avec vos tableaux", address: "41 Rue Jobin, 13003 Marseille", price_per_day: 4)
 paint.photo.attach(io: file, filename: 'maison.png', content_type: 'image/png')
-paint.user = User.where(email: "isabelle@mail.com").first
+paint.user = User.where(email: "leo@mail.com").first
 paint.save
 puts "Created #{paint.name}"
 
 file = URI.open('https://res.cloudinary.com/doakgwppy/image/upload/v1597747342/paintings/birmingham-museums-trust-G1Z0cIMYHVM-unsplash-2_jhhx6f.jpg')
 paint = Painting.new(name: "Paysans attristés par la sécheresse", description: "Retrouvez vos racines d'antan à travers ce magnifique tableau d'un peintre anonyme. Plongez dans la france rurale du 18 ème siècle et partagez leur quotidien. ", address: "ZAE du pas St Jacques, Rue des Frères Lumière, 86180 Buxerolles", price_per_day: 2)
 paint.photo.attach(io: file, filename: 'paysans.png', content_type: 'image/png')
-paint.user = User.where(email: "isabelle@mail.com").first
+paint.user = User.where(email: "leo@mail.com").first
 paint.save
 puts "Created #{paint.name}"
 

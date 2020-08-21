@@ -9,7 +9,7 @@
 }
 
 .btn-flat-white:hover {
-  box-shadow:3px 5px 10px black;
+  box-shadow:3px 5px 10px lightgray;
   background: #ffd571;
   color: black;
   padding: 10px 26px 10px 26px;
@@ -29,7 +29,7 @@
 }
 
 .btn-painting-new:hover {
-      box-shadow:3px 5px 10px black;
+      box-shadow:3px 5px 10px lightgray;
       text-decoration:none;
       background: #ffd571;
       color: black;
@@ -46,7 +46,7 @@
   font-family: $p-font;
   transition: background 0.8s ease;
     &:hover {
-    box-shadow:3px 5px 10px black;
+    box-shadow:3px 5px 10px lightgray;
     background: #ffd571;
     color: black;
     padding: 10px 26px 10px 26px;

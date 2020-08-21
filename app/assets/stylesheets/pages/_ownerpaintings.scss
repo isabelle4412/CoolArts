@@ -1,5 +1,32 @@
+.container-owner {
+    background-color: white;
+}
+
+h1 {
+    font-family:'Pacifico', lighter;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
 .painting {
     display: flex;
-    font-family: $p-font;
-    font-size:22px;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px lightgrey;
+    background-color: $gray-tab;
+
+    p {
+        font-family: $p-font;
+        font-size:22px;
+       }
+
+    h2 {
+        font-family:'Pacifico', lighter;
+        font-size: 26px;
+        width: 30%;
+       }
 }

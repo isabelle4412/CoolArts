@@ -20,10 +20,10 @@ class BookingsController < ApplicationController
     @painting         = Painting.find(params[:booking][:painting_id])
     @booking.painting = @painting
 
-    @booking.total_price = (@booking.ends_on - @booking.starts_on) * @booking.painting.price_per_day
+    # @booking.total_price = (@booking.ends_on - @booking.starts_on) * @booking.painting.price_per_day
 
     if @booking.save!
-      redirect_to @painting, notice: 'La réservation a bien été envoyé'
+      redirect_to bookings_path, notice: 'La réservation a bien été envoyé'
     else
 
       render "paintings/show"

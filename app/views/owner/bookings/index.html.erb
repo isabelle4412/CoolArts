@@ -1,0 +1,11 @@
+<div class = "global_owner_container">
+<%  @bookings_owner.each do |booking_owner| %>
+<div class="container_owner_bookings">
+  <div><%= cl_image_tag booking_owner.photo.key, height: 150, width: 200, crop: :fill, class: "img" %></div>
+  <p class="title"><%= booking_owner.name %></p>
+  <div class="overlay"></div>
+  <div class="button_owners"><a href="#">  </a></div>
+</div>
+
+<% end %>
+</div>d

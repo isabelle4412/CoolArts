@@ -1,36 +1,23 @@
-<div class="contain_booking">
-
-  <div class="container">
-  <div class="title_reservation">
-    <h1>Mes réservations:</h1>
-  <div >
-    <div class="title-bis">
-    <h2>Les tableaux que j'ai loué :</h2>
+  <div class="container-title-bookings">
+    <h3>Mes réservations:</h3>
+    <h5>Les tableaux que j'ai loué :</h5>
   </div>
 
-  <div class="container container_booking">
-    <div class="card mb-3 mt-5 ml-4" style="max-width: 1040px, max-height: 500px;">
-      <div class="row no-gutters">
-        <div class="image-booking col-md-4">
-
-          <% @bookings.each do |booking| %>
-            <p><%= cl_image_tag booking.painting.photo.key, width: 350, height: 260, crop: :fill%></p>
-          <% end %>
-        </div>
-
-        <div class="col-md-8">
-          <% @bookings.each do |booking| %>
-          <div class="card-body booking">
-            <h1 class="card-text"><%= booking.painting.name%></h1>
-            <p class="card-text-reservation">Date de début: <%= booking.starts_on%></p>
-            <p class="card-text-reservation">Date de fin: <%= booking.ends_on %></p>
-            <p class="card-text-reservation">Status: <%= booking.state %></p>
-            <p class="card-text-reservation">Prix: <%= booking.total_price %> e par jour</p>
-          </div>
-          <% end %>
-        </div>
+<div class="container">
+  <div class="card-body-bookings">
+  <% @bookings.each do |booking| %>
+  <%= link_to painting_path(booking.painting) do %>
+    <div class="card-product">
+    <%= cl_image_tag booking.painting.photo.key, width: 300, height: 200, crop: :fill, class:"card-img" %>
+      <div class="card-product-infos">
+        <h2> <%= booking.painting.name %> </h2>
+        <p> Date de début: <%= booking.starts_on %> </p>
+        <p> Date de fin: <%= booking.ends_on %> </p>
+        <p> Status: <%= booking.state %> </p>
+        <p> Prix total: <%= booking.total_price %> </p>
       </div>
     </div>
+  <% end %>
+  <% end %>
   </div>
 </div>
-

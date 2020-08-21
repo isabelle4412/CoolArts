@@ -1,11 +1,11 @@
 <div class="container-owner">
-<h1>Les tableaux de <%= current_user.first_name%></h1>
-<% @owner_paintings.each do |owner_painting| %>
-    <div class="painting">
-        <div><%= cl_image_tag owner_painting.photo.key, height: 150, width: 200, crop: :fill, class: "text-center img" %></div>
-        <h2> <%= owner_painting.name %></h2>
-        <p> <%= owner_painting.description %></p>
-    </div>
-<% end %>
+    <h1>Les tableaux de <%= current_user.first_name%></h1>
+    <% @owner_paintings.each do |owner_painting| %>
+        <div class="painting">
+            <div><%= cl_image_tag owner_painting.photo.key, height: 50, width: 75, crop: :fill, class: "text-center img" %></div>
+            <h2> <%= owner_painting.name %></h2>
+            <p> <%= owner_painting.description %></p>
+        </div>
+    <% end %>
 </div>
 

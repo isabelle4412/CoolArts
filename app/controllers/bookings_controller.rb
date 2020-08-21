@@ -15,7 +15,7 @@ class BookingsController < ApplicationController
   def create
     @booking      = Booking.new(booking_params)
     @booking.user = User.where(first_name: current_user.first_name).first
-    @booking.state = "pending"
+    @booking.state = "En cours"
 
     @painting         = Painting.find(params[:booking][:painting_id])
     @booking.painting = @painting
@@ -23,7 +23,7 @@ class BookingsController < ApplicationController
     @booking.total_price = (@booking.ends_on.to_date - @booking.starts_on.to_date).to_i * @booking.painting.price_per_day
 
     if @booking.save!
-      redirect_to bookings_path, notice: 'La réservation a bien été envoyé'
+      redirect_to bookings_path, notice: 'La demande de réservation a bien été envoyé'
     else
       render "paintings/show"
     end
@@ -31,14 +31,14 @@ class BookingsController < ApplicationController
 
   def accept
     @booking = Booking.find(params[:id])
-    @booking.state = "accepted"
+    @booking.state = "Acceptée"
     @booking.save
     redirect_to owner_bookings_path
   end
 
   def decline
     @booking = Booking.find(params[:id])
-    @booking.state = "refused"
+    @booking.state = "Refusée"
     @booking.save
     redirect_to owner_bookings_path
   end

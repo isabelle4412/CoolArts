@@ -44,10 +44,10 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 5px 5px 5px lightgray;
   margin: 30px;
     &:hover {
-      box-shadow:8px 8px 3px #888888 ;
+      box-shadow:8px 8px 3px lightgray ;
       transition: box-shadow 0.4s;
     }
 }

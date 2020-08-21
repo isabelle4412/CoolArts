@@ -11,10 +11,9 @@
     <%= cl_image_tag booking.painting.photo.key, width: 300, height: 200, crop: :fill, class:"card-img" %>
       <div class="card-product-infos">
         <h2> <%= booking.painting.name %> </h2>
-        <p> Date de début: <%= booking.starts_on.strftime("%d/%m/%Y") %> </p>
-        <p> Date de fin: <%= booking.ends_on.strftime("%d/%m/%Y") %> </p>
-        <p> Status: <%= booking.state %> </p>
-        <p> Prix total: <%= booking.total_price %>€</p>
+        <p> du <%= booking.starts_on.strftime("%d/%m/%Y") %> au <%= booking.ends_on.strftime("%d/%m/%Y") %> </p>
+        <p> <%= booking.state %> </p>
+        <p> <i class="far fa-credit-card"></i> <%= booking.total_price %>€</p>
       </div>
     </div>
   <% end %>

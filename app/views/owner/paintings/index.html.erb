@@ -1,11 +1,11 @@
-
+<div class="container-owner">
+<h1>Les tableaux de <%= current_user.first_name%></h1>
 <% @owner_paintings.each do |owner_painting| %>
     <div class="painting">
         <div><%= cl_image_tag owner_painting.photo.key, height: 150, width: 200, crop: :fill, class: "text-center img" %></div>
-        <p> <%= owner_painting.name %><br>date début, date fin, prix total </p>
-        <p><%= owner_painting.bookings%></p>
-        <p>Bouton Valider</p>
-        <p>Bouton Refuser</p>
+        <h2> <%= owner_painting.name %></h2>
+        <p> <%= owner_painting.description %></p>
     </div>
 <% end %>
+</div>
 
